@@ -24,7 +24,7 @@
     console.log(jsonData)
     document.getElementById("image").innerHTML =
     '<img src="' + 
-      jsonData.message + 
+      jsonData.url + 
       '" alt="API Catgirl Image" ' +
       '>'
   } catch (err) {
@@ -32,4 +32,4 @@
   }
 }
 
-getImage("https://nekos.best/api/:version")
+getImage("https://nekos.best/api/v2/neko")
